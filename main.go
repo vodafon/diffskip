@@ -12,6 +12,7 @@ import (
 
 var (
 	flagWordSize = flag.Int("size", 2, "size")
+	flagColor    = flag.Bool("color", false, "color output")
 )
 
 const (
@@ -38,7 +39,7 @@ func main() {
 		r:    os.Stdin,
 		w:    os.Stdout,
 	}
-
+	color.NoColor = !*flagColor
 	worker.Do()
 }
 
