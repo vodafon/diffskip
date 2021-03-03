@@ -1,0 +1,14 @@
+diff --git a/1.txt b/1.txt
+index f895ddb..3f6fe16 100644
+--- a/1.txt
++++ b/1.txt
+@@ -1,7 +1,7 @@
+ v = r(d[12]);
++c = r(d[12]);
++var a = r(d[14]).default;
+ 
+ if (v == 0) {
+   var e = b * 2;
++  var w = "34asd092jkasd62ja";
++  var e = a * 2;
+ }
