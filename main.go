@@ -91,6 +91,7 @@ func (obj Worker) Do() {
 func (obj Worker) DoBlock(block Block) {
 	if len(block.newLines) == 0 || len(block.oldLines) == 0 {
 		obj.Print(block.oldLines, block.newLines)
+		return
 	}
 
 	oldL := []string{}
